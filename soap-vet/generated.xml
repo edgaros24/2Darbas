@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<owner>
+    <name>Vardenis</name>
+    <lastname>Pavardenis</lastname>
+    <specialist>
+        <SName>Ona</SName>
+        <SLastname>Onute</SLastname>
+        <specialization>Surgeon</specialization>
+    </specialist>
+    <animals>
+        <animal>
+            <name>Tom</name>
+            <gender>Male</gender>
+            <type>Cat</type>
+        </animal>
+    </animals>
+</owner>

@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+				  xmlns:gs="http://spring.io/guides/lt/viko/eif/ejurkoit/soap/vet/soapvet/model">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <gs:getVetRequest>
+         <gs:name>Vardenis</gs:name>
+      </gs:getVetRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

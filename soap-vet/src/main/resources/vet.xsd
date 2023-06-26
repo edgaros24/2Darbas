@@ -1,0 +1,50 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://spring.io/guides/lt/viko/eif/ejurkoit/soap/vet/soapvet/model"
+           targetNamespace="http://spring.io/guides/lt/viko/eif/ejurkoit/soap/vet/soapvet/model" elementFormDefault="qualified">
+
+    <xs:element name="getVetRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getVetResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="owner" type="tns:owner"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="owner">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string" />
+            <xs:element name="lastname" type="xs:string" />
+            <xs:element name="specialist">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="name" type="xs:string" />
+                        <xs:element name="lastname" type="xs:string" />
+                        <xs:element name="specialization" type="xs:string" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="animals">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" name="animal">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="name" type="xs:string" />
+                                    <xs:element name="gender" type="xs:string" />
+                                    <xs:element name="type" type="xs:string" />
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
